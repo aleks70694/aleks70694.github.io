@@ -1,0 +1,56 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+div {
+	width: 700px;
+	height: 45px;
+	margin: 50% auto;
+}
+
+ul {
+	list-style-type: none;
+	float: left;
+	margin-top: 10px;
+}
+
+
+ul li {
+	padding: 0 10px 0 10px;
+}
+
+
+ul.number li {
+	border: 1px solid #20B2AA;
+	margin: 0 5px 0 5px;
+	border-radius: 5px;
+}
+
+ul.number li.without {
+	border: none;
+}
+
+ul.sdvig {
+	margin-left: 50px;
+}
+
+ul.word li {
+	margin-top: 2px;
+}
+
+ul li {
+	float: left;
+}
+
+ul li a {
+	text-decoration: none;
+}
+
+ul.number li:hover:not([class="without"]) {
+	background-color: #9932CC;
+}
+
+ul.number li a:hover {
+	color: white;
+}
