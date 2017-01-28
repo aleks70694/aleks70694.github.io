@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> <!-- тип документа и версия -->
+<html>
+	<head>
+		<!-- название нашего окна --> 
+		<title>Вставка мультиплицирования</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <!-- указание кодировки -->
+		<meta name="description" content="Вставка мультиплицирования в HTML"> <!-- то, что будут выводить поисковики -->
+		<meta name="Keywords" content="HTML, теги, video, audio, source"> <!-- ключевые слова -->
+	</head>
+	<body>
+		<!-- Таблица -->  
+		<table border="2px" width="1024px" align="center" cellpadding="6px"><!-- толщина рамки,ширина таблицы,положение, расстояние между границей и содержимым -->
+			<!-- шапка нашей таблицы --> 
+			<tr>
+				<td colspan="2" align="center"><b>Вставка мультипликации</b></td><!-- объединение ячеек, выравнивание по центру, жирность -->
+			</tr>
+			<!-- END шапка нашей таблицы -->
+			<tr>
+				<td width="250px" valign="top"><!-- ширина ячейки -->
+					<!-- Нумерованный список -->
+					<ol>
+						<li><a href="hystory.html" target="_self">История HTML</a></li>
+						<li><a href="doctype.html" target="_self">DocType</a></li>
+						<li><a href="struct.html" target="_self">Структура HTML-документа</a></li>
+						<li><a href="metatags.html" target="_self">Метатеги</a></li>
+						<li><a href="text.html" target="_self">Текст</a></li>
+						<li><a href="list.html" target="_self">Списки</a></li>
+						<li><a href="bvsstrong.html" target="_self">Отличия тега B от тега Strong</a></li>
+						<li><a href="images.html" target="_self">Рисунки</a></li>
+						<li><a href="table.html" target="_self">Таблицы</a></li>
+						<li><a href="link.html" target="_self">Ссылки</a></li>
+						<li><a href="map.html" target="_self">Map-карта</a></li>
+						<li><a href="divvsspan.html" target="_self">Отличия тега div от тега span</a></li>
+						<li><a href="framevsiframe.html" target="_self">Отличия frame от iframe</a></li>
+						<li><a href="form.html" target="_self">Формы</a></li>
+						<li><a href="paste.html" target="_self">Вставка мультипликации</a></li>
+						<li><a href="reviewhtml5.html" target="_self">Обзор HTML5</a></li>	
+						<li><a href="tagcanvas.html" target="_self">Тег канвас</a></li>
+						<li><a href="universal.html" target="_blank">Универсальные атрибуты*</a></li>
+					</ol>	
+					<!-- END Нумерованный список -->
+				</td>
+				
+				<td>
+					<h3 align="center"> Тег &lt;source&gt; </h3> <!-- заголовок по центру -->
+					<p> <!-- новый абзац -->
+						Вставляет звуковой или видеофайл для тегов <font color="#0000FF">&lt;audio&gt;</font> и <font color="#0000FF">&lt;video&gt;</font>. Обобщенно такие файлы называются медийными.
+					</p>
+					
+					<h4>Атрибуты:</h4>
+					<!-- Маркированный список -->
+					<ul>
+						<li>media - определяет устройство, для которого будет воспроизводиться файл.</li>
+						<li>src - адрес файла.</li>
+						<li>type - MIME-тип медийного источника.</li>
+					</ul>
+					<!-- END Маркированный список -->
+					<img src="images/codecsvideo.png" width="740px" alt="Кодеки видео и аудио" /> <!-- вставка картинки -->
+					<p><u>Пример кода вставки видеофайла:</u></p> <!-- новый абзац -->
+					<code><font color="#0000FF">
+						&lt;video width="400" height="300" controls="controls"&gt; <br /><!-- переход на новую строку  -->
+						&lt;source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'&gt; <br /><!-- переход на новую строку  -->
+						&lt;source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt; <br /><!-- переход на новую строку  -->
+						&lt;source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'&gt; <br /><!-- переход на новую строку  -->
+						Тег video не поддерживается вашим браузером. &lt;a href="video/duel.mp4"&gt;Скачайте видео&lt;/a&gt;. <br /><!-- переход на новую строку  -->
+						&lt;/video&gt; <br /><!-- переход на новую строку  -->
+					</font>
+					</code><!-- выделение,отображение кода  -->
+					
+					<p><u>Результат:</u></p> <!-- новый абзац -->
+					<video width="400" height="300" controls="controls"> <!-- ширина, высота окна, элементы управления -->
+					<source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'> <!-- источник видео, тип, кодеки -->
+					<source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> <!-- источник видео, тип, кодеки -->
+					<source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'> <!-- источник видео, тип, кодеки -->
+						Тег video не поддерживается вашим браузером. <a href="video/duel.mp4">Скачайте видео</a>. <!-- ссылка на видео -->
+					</video>
+					
+					<p><u>Пример кода вставки аудиофайла: </u></p> <!-- новый абзац -->
+					<code><font color="#0000FF">
+						&lt;audio controls&gt; <br /><!-- переход на новую строку  -->
+						&lt;source src="audio/music.ogg" type="audio/ogg; codecs=vorbis"&gt; <br /><!-- переход на новую строку  -->
+						&lt;source src="audio/music.mp3" type="audio/mpeg"&gt; <br /><!-- переход на новую строку  -->
+						Тег audio не поддерживается вашим браузером.  <br /><!-- переход на новую строку  -->
+						&lt;a href="audio/music.mp3"&gt;Скачайте музыку&lt;/a&gt;. <br /><!-- переход на новую строку  -->
+						&lt;/audio&gt; <br /><!-- переход на новую строку  -->
+					</font></code><!-- выделение,отображение кода  -->
+					
+					<p><u>Результат:</u></p> <!-- новый абзац -->
+					<audio controls> <!-- элементы управления -->
+					<source src="audio/music.ogg" type="audio/ogg; codecs=vorbis"> <!-- источник аудио, тип, кодеки -->
+					<source src="audio/music.mp3" type="audio/mpeg">  <!-- источник видео, тип -->
+						Тег audio не поддерживается вашим браузером. 
+						<a href="audio/music.mp3">Скачайте музыку</a>. <!-- ссылка на аудио -->
+					</audio>
+					
+					<h3 align="center"> Тег &lt;video&gt; </h3> <!-- заголовок по центру -->
+					<p> <!-- новый абзац -->
+						Добавляет, воспроизводит и управляет настройками видеоролика на веб-странице. Путь к файлу задается через атрибут src или вложенный тег <font color="#0000FF">&lt;source&gt;</font>. Список поддерживаемых браузерами аудио и видеокодеков ограничен и приведен в таблице.
+					</p>
+					
+					<h4>Атрибуты:</h4>
+					<!-- Маркированный список -->
+					<ul>
+						<li>autoplay - видео начинает воспроизводиться автоматически после загрузки страницы.</li>
+						<li>controls - добавляет панель управления к видеоролику.</li>
+						<li>height - задает высоту области для воспроизведения видеоролика.</li>
+						<li>loop - повторяет воспроизведение видео с начала после его завершения.</li>
+						<li>poster - указывает адрес картинки, которая будет отображаться, пока видео не доступно или не воспроизводится.</li>
+						<li>preload - используется для загрузки видео вместе с загрузкой веб-страницы.</li>
+						<li>src - указывает путь к воспроизводимому видеоролику.</li>
+						<li>width - задает ширину области для воспроизведения видеоролика.</li>
+					</ul>
+					<!-- END Маркированный список -->
+					
+					<h3 align="center"> Тег &lt;audio&gt; </h3> <!-- заголовок по центру -->
+					<p><!-- новый абзац -->
+						Добавляет, воспроизводит и управляет настройками аудиозаписи на веб-странице. Путь к файлу задается через атрибут src или вложенный тег <font color="#0000FF">&lt;source&gt;</font>. Внутри контейнера <font color="#0000FF">&lt;audio&gt;</font> можно написать текст, который будет выводиться в браузерах, не работающих с этим тегом. Список поддерживаемых браузерами кодеков ограничен и приведен в таблице.
+					</p>
+					
+					<h4>Атрибуты:</h4>
+					<!-- Маркированный список -->
+					<ul>
+						<li>autoplay - звук начинает играть сразу после загрузки страницы.</li>
+						<li>controls - добавляет панель управления к аудиофайлу.</li>
+						<li>loop - повторяет воспроизведение звука с начала после его завершения.</li>
+						<li>preload - используется для загрузки аудио вместе с загрузкой веб-страницы.</li>
+						<li>src - указывает путь к воспроизводимому файлу.</li>
+					</ul>
+					<!-- END Маркированный список -->
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><b>Справочник HTML</b></td> <!-- подвал сайта -->
+			</tr>
+		</table>
+		<!-- END Таблица -->
+	</body>
+</html>																				
