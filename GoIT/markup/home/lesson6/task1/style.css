@@ -1,0 +1,266 @@
+* {
+	margin: 0; /* обнулить внешний отступ у всех элементов */
+	padding: 0; /* обнулить внутренний отступ у всех элементов*/
+}
+
+/* ---------- Оболочка блока с билбордами ------------ */
+div.shell {
+	width: 880px; /* ширина блока */
+	height: 480px; /* высота блока */
+	margin: 10% auto; /* выравнивае по центру и смещение на 10% вниз  */
+	position: relative; /* относительное позиционирование */
+	overflow: hidden; /* не показывать элементы, выходящие за пределы блока */
+}
+/* ---------- Оболочка блока с билбордами END ------------ */
+
+/* ---------- Левый билборд ------------ */
+div.outer_left {
+	font-family: 'Trebuchet MS'; /* установка шрифта (наследуется всеми элементами внутри) */
+	width: 300px; /* ширина блока */
+	min-height: 440px; /* минимальная высота блока */
+	color: #2F4F4F; /* цвет шрифта - аспидно-серый  */
+	background-color: #2BC2D5; /* цвет фона - светло-синий */
+	border-radius: 5px; /* немного закруглить углы */
+	position: absolute; /* абсолютное позиционирование */
+	z-index: 1; /* установка слоя */
+	top: 14px; /* сдвиг вниз  относительно края внутри div.shell*/
+}
+
+div.inner_left {
+	border: 1px solid #2BC2D5; /* установить рамку светло-синего цвета */
+	width: 300px; /* ширина блока */
+	min-height: 375px; /* минимальная высота блока */
+	margin: 15px 0px 0px 0px; /* внешний отступ блока */
+	background-color: #FFF; /* цвет фона - белый */
+	box-sizing: border-box; /* уместить в блок контент */
+}
+
+h2.header_left,
+div.inner_left div {
+	text-align: center; /* выравнивание по центру */
+}
+
+div.outer_left > h2.header_left {
+	padding: 20px 0px 0px 0px; /* задать внутренние отступы */
+	color: #FFF; /* цвет текста - белый */
+}
+
+h2.header_left {
+	padding: 25px 0px 25px 0px; /* задать внутренние отступы */
+}
+
+div.inner_left div {
+	font-weight: 600; /* полужирный текст */
+	font-size: 20px; /* задать размер шрифта */
+}
+
+div.inner_left div span:nth-of-type(1) {
+	vertical-align: top; /* выровнять по верху */
+}
+
+div.inner_left div span:nth-of-type(2) {
+	font-size: 70px; /* задать размер шрифта */
+} 
+
+div.inner_left ul {
+	list-style-image: url(images/bullet.png); /* установить в качестве буллита картинку */
+	list-style-position: inside; /* поместить буллеты внутрь блока */
+	margin: 15px 20px 20px 10px; /* задать внешние отступы */
+}
+
+div.inner_left ul li {
+	margin: 0px 0px 1px 0px; /* задать внешние отступы */
+	padding: 5px 0px 5px 40px; /* задать внутренние отступы */
+	color: #A9A9A9; /* цвет текста - бело-алюминиевый */
+}
+
+div.inner_left ul li:nth-of-type(2n+1)
+{
+	background-color: #EDF5FD; /* цвет фона - лавандовый */
+}
+
+div.inner_left ul li:nth-of-type(2n)
+{
+	background-color: #F5F5F6; /* цвет фона - очень бледно-синий */
+}
+
+div.button_left button {
+	width: 270px; /* ширина блока */
+	padding: 10px 0px 10px 0px; /* задать внутренние отступы */
+	margin: 0px 0px 15px 0px; /* задать внешние отступы */
+	font-weight: 600; /* жирность текста - полужирный */
+	color: #FFF; /* цвет текста - белый */
+	background-color: #3070a8; /* цвет фона - темно-голубой */
+	border-radius: 5px; /* немного закруглить углы */
+}
+/* ---------- Левый билборд END ------------ */
+
+/* ---------- Центральный билборд ------------ */
+div.outer_center {
+	font-family: 'Trebuchet MS'; /* установка шрифта (наследуется всеми элементами внутри) */
+	width: 300px; /* ширина блока */
+	min-height: 480px; /* минимальная высота блока */
+	color: #2F4F4F; /* цвет шрифта - аспидно-серый */
+	background-color: #FF8C00; /* цвет фона - темновато-оранжевый */
+	border-radius: 5px; /* немного закруглить углы */
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* задать тень по краям блока */
+	position: absolute; /* абсолютное позиционирование */
+	z-index: 2; /* установка слоя */
+	right: 290px; /* сдвиг вправо  относительно края внутри div.shell */
+}
+
+div.inner_center {
+	width: 290px; /* ширина блока */
+	min-height: 385px; /* минимальная высота блока */
+	margin: 25px 5px 0px 5px; /* задать внешние отступы */
+	background-color: #FFF; /* цвет фона - белый */
+}
+
+h2.header_center,
+div.inner_center div {
+	text-align: center; /* выравнивание элементов по центру */
+}
+
+div.outer_center > h2.header_center {
+	padding: 25px 0px 0px 0px; /* задать внутренние отступы */
+	color: #FFF; /* цвет текста - белый */
+}
+
+h2.header_center {
+	padding: 25px 0px 25px 0px; /* задать внутренние отступы */
+}
+
+div.inner_center div {
+	font-weight: 600; /* жирность текста - полужирный */
+	font-size: 20px; /* размер шрифта */
+}
+
+div.inner_center div span:nth-of-type(1) {
+	vertical-align: top; /* выровнять по верху */
+}
+
+div.inner_center div span:nth-of-type(2) {
+	font-size: 70px; /* размер шрифта */
+}
+
+div.inner_center ul {
+	list-style-image: url(images/bullet.png); /* установить в качестве буллита картинку */
+	list-style-position: inside; /* поместить буллеты внутрь блока */
+	margin: 15px 10px 20px 10px; /* задать внешние отступы */
+}
+
+div.inner_center ul li {
+	margin: 0px 0px 1px 0px; /* задать внешние отступы */
+	padding: 5px 0px 5px 40px; /* задать внутренние отступы */
+	color: #A9A9A9; /* цвет текста - бело-алюминиевый */
+}
+
+div.inner_center ul li:nth-of-type(2n+1)
+{
+	background-color: #EDF5FD; /* цвет фона - лавандовый */
+}
+
+div.inner_center ul li:nth-of-type(2n)
+{
+	background-color: #F5F5F6; /* цвет фона - очень бледно-синий */
+}
+
+div.button_center button {
+	width: 270px; /* ширина блока */
+	padding: 10px 0px 10px 0px; /* задать внутренние отступы */
+	margin: 0px 0px 25px 0px; /* задать внешние отступы */
+	font-weight: 600; /* жирность текста - полужирный */
+	color: #FFF; /* цвет текста - белый */
+	background-color: #FF8C00; /* цвет фона - темновато-оранжевый */
+	border-radius: 5px; /* немного закруглить углы */
+}
+/* ---------- Центральный билборд END ------------ */
+
+/* ---------- Правый билборд ------------ */
+div.outer_right {
+	font-family: 'Trebuchet MS'; /* установка шрифта (наследуется всеми элементами внутри) */
+	width: 300px; /* ширина блока */
+	min-height: 440px; /* минимальная высота блока */
+	color: #2F4F4F; /* цвет шрифта - аспидно-серый */
+	background-color: #00B89A; /* цвет фона - салатовый */
+	border-radius: 5px; /* немного закруглить углы */
+	position: absolute; /* абсолютное позиционирование */
+	z-index: 1; /* установка слоя */
+	left: 580px; /* сместить вправо  относительно края внутри div.shell */
+	top: 14px; /* сместить вниз  относительно края внутри div.shell*/
+}
+
+div.inner_right {
+	border: 1px solid #00B89A; /* задать рамку салатового цвета */
+	width: 300px; /* ширина блока */
+	min-height: 375px; /* минимальная высота блока */
+	margin: 15px 0px 0px 0px; /* задать внешние отступы */
+	background-color: #FFF; /* цвет фона - белый */
+	box-sizing: border-box; /* уместить в блок контент */
+}
+
+h2.header_right,
+div.inner_right div {
+	text-align: center; /* выровнять по центру */
+}
+
+div.outer_right > h2.header_right {
+	padding: 20px 0px 0px 0px; /* задать внутренние отступы */
+	color: #FFF; /* цвет текста - белый */
+}
+
+h2.header_right {
+	padding: 25px 0px 25px 0px; /* задать внутренние отступы */
+}
+
+div.inner_right div {
+	font-weight: 600; /* жирность текста - полужирный */
+	font-size: 20px; /* задать размер шрифта */
+}
+
+div.inner_right div span:nth-of-type(1) {
+	vertical-align: top; /* выровнять по верху */
+}
+
+div.inner_right div span:nth-of-type(2) {
+	font-size: 70px; /* задать размер шрифта */
+}
+
+div.inner_right ul {
+	list-style-image: url(images/bullet.png); /* установить в качестве буллита картинку */
+	list-style-position: inside; /* поместить буллеты внутрь блока */
+	margin: 15px 10px 20px 20px; /* задать внешние отступы */
+}
+
+div.inner_right ul li {
+	margin: 0px 0px 1px 0px; /* задать внешние отступы */
+	padding: 5px 0px 5px 40px; /* задать внутренние отступы */
+	color: #A9A9A9; /* цвет текста - бело-алюминиевый */
+}
+
+div.inner_right ul li:nth-of-type(2n+1)
+{
+	background-color: #EDF5FD; /* цвет фона - лавандовый */
+}
+
+div.inner_right ul li:nth-of-type(2n)
+{
+	background-color: #F5F5F6; /* цвет фона - очень бледно-синий */
+}
+
+div.button_right button {
+	width: 270px; /* ширина блока */
+	padding: 10px 0px 10px 0px; /* задать внутренние отступы */
+	margin: 0px 0px 15px 0px; /* задать внешние отступы */
+	font-weight: 600; /* жирность текста - полужирный */
+	color: #FFF; /* цвет текста - белый */
+	background-color: #3070A8; /* цвет фона - темно-голубой */
+	border-radius: 5px; /* немного скруглить углы */
+}
+/* ---------- Правый билборд END ------------ */
+
+button, 
+button:active, 
+button:focus {
+    outline: none; /* убрать синуюю рамку у кнопки при нажатии и в фокусе  */
+}
