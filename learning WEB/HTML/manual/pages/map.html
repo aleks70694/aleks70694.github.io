@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> <!-- тип документа и версия -->
+<html>
+	<head>
+		<!-- название нашего окна --> 
+		<title>Map-карта</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <!-- указание кодировки -->
+		<meta name="description" content="Что такое map-карта в HTML"> <!-- то, что будут выводить поисковики -->
+		<meta name="Keywords" content="HTML, теги, map"> <!-- ключевые слова -->
+	</head>
+	<body>
+		<!-- Таблица -->
+		<table border="2px" width="1024px" align="center" cellpadding="6px"><!-- толщина рамки,ширина таблицы,положение, расстояние между границей и содержимым -->
+			<!-- шапка нашей таблицы --> 
+			<tr>
+				<td colspan="2" align="center"><b>Map-карта</b></td><!-- объединение ячеек, выравнивание по центру, жирность -->
+			</tr>
+			<!-- END шапка нашей таблицы -->
+			<tr>
+				<td width="250px" valign="top"><!-- ширина ячейки -->
+					<!-- Нумерованный список -->
+					<ol>
+						<li><a href="hystory.html" target="_self">История HTML</a></li>
+						<li><a href="doctype.html" target="_self">DocType</a></li>
+						<li><a href="struct.html" target="_self">Структура HTML-документа</a></li>
+						<li><a href="metatags.html" target="_self">Метатеги</a></li>
+						<li><a href="text.html" target="_self">Текст</a></li>
+						<li><a href="list.html" target="_self">Списки</a></li>
+						<li><a href="bvsstrong.html" target="_self">Отличия тега B от тега Strong</a></li>
+						<li><a href="images.html" target="_self">Рисунки</a></li>
+						<li><a href="table.html" target="_self">Таблицы</a></li>
+						<li><a href="link.html" target="_self">Ссылки</a></li>
+						<li><a href="map.html" target="_self">Map-карта</a></li>
+						<li><a href="divvsspan.html" target="_self">Отличия тега div от тега span</a></li>
+						<li><a href="framevsiframe.html" target="_self">Отличия frame от iframe</a></li>
+						<li><a href="form.html" target="_self">Формы</a></li>
+						<li><a href="paste.html" target="_self">Вставка мультипликации</a></li>
+						<li><a href="reviewhtml5.html" target="_self">Обзор HTML5</a></li>	
+						<li><a href="tagcanvas.html" target="_self">Тег канвас</a></li>
+						<li><a href="universal.html" target="_blank">Универсальные атрибуты*</a></li>
+					</ol>	
+					<!-- END Нумерованный список -->
+				</td>
+				<td> <!-- вторая ячейка второй строки таблицы -->
+					<h3 align="center"> Тег &lt;map&gt; </h3>
+					<p> <!-- новый абзац -->
+						Тег <font color="#0000FF">&lt;map&gt;</font> служит контейнером для элементов <font color="#0000FF">&lt;area&gt;</font>, которые определяют активные области для карт-изображений. Такие области устанавливают невидимые зоны на изображении, являющиеся ссылками на HTML-документы. Цель использования тега <font color="#0000FF">&lt;map&gt;</font> — в связывании тега <font color="#0000FF">&lt;img&gt;</font> с клиентской картой-изображением. Эта связь определяется применением единого идентификатора как в теге <font color="#0000FF">&lt;img&gt;</font>, задаваемого атрибутом usemap, так и в теге <font color="#0000FF">&lt;map&gt;</font>, устанавливаемого атрибутом name.
+					</p>
+					<div> <!-- новый абзац -->
+						<h4>Атрибуты:</h4>
+						<!-- Маркированный список -->
+						<ul>
+							<li>name - имя карты изображений </li>
+						</ul>	
+						<!-- END Маркированный список -->
+					</div>
+					<h3 align="center"> Тег &lt;area&gt; </h3>
+					<p><!-- новый абзац -->
+						Каждый элемент <font color="#0000FF">&lt;area&gt;</font> определяет активные области изображения, которые являются ссылками. Рисунок с привязанными к нему активными областями называется в совокупности картой-изображением. Такая карта по внешнему виду ничем не отличается от обычного изображения, но при этом оно может быть разбито на невидимые зоны разной формы, где каждая из областей служит ссылкой. Тег <font color="#0000FF">&lt;area&gt;</font> задает форму области, ее размеры, устанавливает адрес документа, на который следует сделать ссылку, а также имя окна или фрейма, куда браузер будет загружать документ. Этот тег всегда располагается в контейнере <font color="#0000FF">&lt;map&gt;</font>, который связывает координаты областей с изображением.
+					</p>
+					
+					<p><!-- новый абзац -->
+						Несколько областей могут перекрывать друг друга, сверху будет та, которая в коде HTML располагается выше.
+					</p>
+					
+					<h4>Атрибуты:</h4>
+					<!-- Маркированный список -->
+					<ul>
+						<li>accesskey - переход к области с помощью комбинации клавиш. </li>
+						<li>coords - устанавливает координаты активной области. </li>
+						<li>alt - альтернативный текст для области изображения. </li>
+						<li>href - задает адрес документа, на который следует перейти. </li>
+						<li>hreflang - указывает язык документа, на который ведет ссылка. </li>
+						<li>nohref - область без ссылки на другой документ. </li>
+						<li>shape - форма области. </li>
+						<li>tabindex - определяет последовательность перехода между ссылками при нажатии на кнопку Tab. </li>
+						<li>target - имя окна или фрейма, куда браузер будет загружать документ. </li>
+						<li>type - указывает MIME-тип документа, на который ведёт ссылка. </li>
+						<li><span title="Ссылка в главном меню">Доступны универсальные атрибуты*</span> <!-- всплывающая подсказка --> </li>
+					</ul>
+					<!-- END Маркированный список -->
+					
+					<p><!-- новый абзац -->
+						Пример кода: <br /><!-- переход на новую строку  -->
+						<code><font color="#0000FF">
+							&lt;p&gt;&lt;map name="minion"&gt; <br /><!-- переход на новую строку  -->
+							&lt;area shape="rect" coords="25,25,125,125" href="https://goo.gl/TJM03p" alt="Квадрат" /&gt; <br /><!-- переход на новую строку  -->
+							&lt;area shape="circle" coords="200,75,50" href="https://goo.gl/McMWR0" alt="Круг" /&gt; <br /><!-- переход на новую строку  -->
+							&lt;area shape="poly" coords="260,125,390,125,325,25" href="https://goo.gl/sIzlKj" alt="Треугольник" /&gt; <br /><!-- переход на новую строку  -->
+							&lt;area shape="poly" coords="400,75,435,57,450,22,465,60,500,75,465,90,450,125,435,90" href="https://goo.gl/8fn1kV" alt="Звезда" /&gt; <br /><!-- переход на новую строку  -->
+							&lt;/map>&lt;/p&gt; <br /><!-- переход на новую строку  -->
+							&lt;p&gt;&lt;img src="images/map.png" usemap="#minion" alt="Пример карты">&lt;/p&gt; <br /><!-- переход на новую строку  -->
+						</font></code><!-- выделение,отображение кода  -->
+					</p>
+					
+					<p>Результат:</p> <!-- новый абзац -->
+					<p><map name="minion"> <!-- новый абзац -->
+						<area shape="rect" coords="25,25,125,125" href="https://goo.gl/TJM03p" alt="Квадрат" /> <!-- форма области, координаты, ссылка, альт.назв. -->
+						<area shape="circle" coords="200,75,50" href="https://goo.gl/McMWR0" alt="Круг" /> <!-- форма области, координаты, ссылка, альт.назв. -->
+						<area shape="poly" coords="260,125,390,125,325,25" href="https://goo.gl/sIzlKj" alt="Треугольник" /> <!-- форма области, координаты, ссылка, альт.назв. -->
+						<area shape="poly" coords="400,75,435,57,450,22,465,60,500,75,465,90,450,125,435,90" href="https://goo.gl/8fn1kV" alt="Звезда" /> <!-- форма области, координаты, ссылка, альт.назв. -->
+					</map></p>
+					<p align="center"><img src="images/map.png" usemap="#minion" alt="Пример карты" /></p><!-- новый абзац -->
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><b>Справочник HTML</b></td> <!-- подвал сайта -->
+			</tr>
+		</table>
+		<!-- END Таблица -->
+	</body>
+</html>							

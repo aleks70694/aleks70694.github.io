@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> <!-- тип документа и версия -->
+<html>
+	<head>
+		<!-- название нашего окна --> 
+		<title>Элемент DocType</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <!-- указание кодировки -->
+		<meta name="description" content="Виды doctype в HTML"> <!-- то, что будут выводить поисковики -->
+		<meta name="Keywords" content="HTML, XHTML, doctype, синтаксис"> <!-- ключевые слова -->
+	</head>
+	<body>
+		<!-- Таблица -->
+		<table border="2px" width="1024px" align="center" cellpadding="6px"><!-- толщина рамки,ширина таблицы,положение, расстояние между границей и содержимым -->
+			<!-- шапка нашей таблицы --> 
+			<tr>
+				<td colspan="2" align="center"><b>DocType</b></td><!-- объединение ячеек, выравнивание по центру, жирность -->
+			</tr>
+			<tr>
+				<td width="250px" valign="top"><!-- ширина ячейки -->
+					<!-- Нумерованный список -->
+					<ol>
+						<li><a href="hystory.html" target="_self">История HTML</a></li>
+						<li><a href="doctype.html" target="_self">DocType</a></li>
+						<li><a href="struct.html" target="_self">Структура HTML-документа</a></li>
+						<li><a href="metatags.html" target="_self">Метатеги</a></li>
+						<li><a href="text.html" target="_self">Текст</a></li>
+						<li><a href="list.html" target="_self">Списки</a></li>
+						<li><a href="bvsstrong.html" target="_self">Отличия тега B от тега Strong</a></li>
+						<li><a href="images.html" target="_self">Рисунки</a></li>
+						<li><a href="table.html" target="_self">Таблицы</a></li>
+						<li><a href="link.html" target="_self">Ссылки</a></li>
+						<li><a href="map.html" target="_self">Map-карта</a></li>
+						<li><a href="divvsspan.html" target="_self">Отличия тега div от тега span</a></li>
+						<li><a href="framevsiframe.html" target="_self">Отличия frame от iframe</a></li>
+						<li><a href="form.html" target="_self">Формы</a></li>
+						<li><a href="paste.html" target="_self">Вставка мультипликации</a></li>
+						<li><a href="reviewhtml5.html" target="_self">Обзор HTML5</a></li>	
+						<li><a href="tagcanvas.html" target="_self">Тег канвас</a></li>
+						<li><a href="universal.html" target="_blank">Универсальные атрибуты*</a></li>
+					</ol>
+					<!-- END Нумерованный список -->
+				</td>
+				<td>
+					<h3 align="center"><u>Введение</u></h3> <!-- выравнивание заголовка по центру, подчеркивание -->
+					<p> <!-- новый абзац -->
+						Элемент <font color="#0000FF">&lt;!DOCTYPE&gt;</font> предназначен для указания типа текущего документа — <b>DTD (document type definition, описание типа документа)</b>. Это необходимо, чтобы браузер понимал, как следует интерпретировать текущую веб-страницу, поскольку <b>HTML</b> существует в нескольких версиях, кроме того, имеется <b>XHTML (EXtensible HyperText Markup Language, расширенный язык разметки гипертекста)</b>, похожий на <b>HTML</b>, но различающийся с ним по синтаксису. Чтобы браузер «не путался» и понимал, согласно какому стандарту отображать веб-страницу и необходимо в первой строке кода задавать <font color="#0000FF">&lt;!DOCTYPE&gt;</font>.
+					</p>
+					<p> <!-- новый абзац -->
+						Существует несколько видов <font color="#0000FF">&lt;!DOCTYPE&gt;</font>, они различаются в зависимости от версии языка, на которого ориентированы. В табл. 1. приведены основные типы документов с их описанием.
+					</p> 
+					<!-- Вложенная таблица -->
+					<table align="center" border="2px" width="720px" cellspacing="0px" cellpadding="6px">	<!-- положение, толщина рамки, ширина, пространство между ячейками, внутренний отступ текста от границы ячейки --> 
+						<tr>
+							<td align="center"><b>Doctype</b></td><!-- выравнивание по центру -->
+							<td align="center"><b>Описание</b></td><!-- выравнивание по центру -->
+						</tr>
+						
+						<tr>
+							<td colspan="2"><b>HTML 4.01</b></td><!-- объединение ячеек -->
+						</tr>
+						
+						<tr>
+							<td>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</td>
+							<td>Строгий синтаксис HTML.</td>
+						</tr>
+						
+						<tr>
+							<td>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</td>
+							<td>Переходный синтаксис HTML.</td>
+						</tr>
+						
+						<tr>
+							<td>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"&gt;</td>
+							<td>В HTML-документе применяются фреймы.</td>
+						</tr>
+						
+						<tr>
+							<td colspan="2"><b>HTML 5</b></td><!-- объединение ячеек -->
+						</tr>
+						
+						<tr>
+							<td>&lt;!DOCTYPE html&gt;</td>
+							<td>Для всех документов.</td>
+						</tr>
+						
+						<tr>
+							<td colspan="2"><b>XHTML 1.0</b></td><!-- объединение ячеек -->
+						</tr>
+						
+						<tr>
+							<td>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</td>
+							<td>Строгий синтаксис XHTML.</td>
+						</tr>
+						
+						<tr>
+							<td>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</td>
+							<td>Переходный синтаксис XHTML.</td>
+						</tr>
+						
+						<tr>
+							<td>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt;</td>
+							<td>Документ написан на XHTML и содержит фреймы.</td>
+						</tr>
+						
+						<tr>
+							<td colspan="2"><b>XHTML 1.1</b></td><!-- объединение ячеек -->
+						</tr>
+						
+						<tr>
+							<td>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;</td>
+							<td>Разработчики XHTML 1.1 предполагают, что он постепенно вытеснит HTML. Никакого деления на виды это определение не имеет, синтаксис один и подчиняется четким правилам.</td>
+						</tr>
+					</table>
+					<!-- END вложенная таблица -->
+					<h3 align="center"><u>Синтаксис</u></h3> <!-- выравнивание заголовка по центру, подчеркивание --> 
+					<p align="center">
+						<font color="#0000FF">
+							<code>&lt;!DOCTYPE [Элемент верхнего уровня] [Публичность] "[Регистрация]//[Организация]//[Тип] [Имя]//[Язык]" "[URL]"&gt;</code><!-- выделение,отображение кода  -->
+						</font>
+					</p>
+					<h3 align="center"><u>Параметры</u></h3> <!-- выравнивание заголовка по центру, подчеркивание -->
+					<!-- Маркированный список -->
+					<ul>
+						<!-- новый абзац -->
+						<li><p>
+							Элемент верхнего уровня — указывает элемент верхнего уровня в документе, для <b>HTML</b> это тег <font color="#0000FF">&lt;html&gt;</font>.
+						</p></li>
+						
+						<!-- новый абзац -->
+						<li><p>Публичность — объект является публичным (значение <b>PUBLIC</b>) или системным ресурсом (значение <b>SYSTEM</b>), например, таким как локальный файл. Для <b>HTML/XHTML</b> указывается значение <b>PUBLIC</b>.</p></li>
+						
+						<!-- новый абзац -->
+						<li><p>Регистрация — сообщает, что разработчик <b>DTD</b> зарегистрирован в международной организации по стандартизации <b>(International Organization for Standardization, ISO)</b>. Принимает одно из двух значений: плюс (+) — разработчик зарегистрирован в <b>ISO</b> и - (минус) — разработчик не зарегистрирован. Для <b>W3C</b> значение ставится «-».</p></li>
+						
+						<!-- новый абзац -->
+						<li><p>Организация — уникальное название организации, разработавшей <b>DTD</b>. Официально <b>HTML/XHTML</b> публикует <b>W3C</b>, это название и пишется в <font color="#0000FF">&lt;!DOCTYPE&gt;</font>.</p></li>
+						
+						<!-- новый абзац -->
+						<li><p>Тип — тип описываемого документа. Для <b>HTML/XHTML</b> значение указывается <b>DTD</b>.</p></li>
+						
+						<!-- новый абзац -->
+						<li><p>Имя — уникальное имя документа для описания <b>DTD</b>.</p></li>
+						
+						<!-- новый абзац -->
+						<li><p>Язык — язык, на котором написан текст для описания объекта. Содержит две буквы, пишется в верхнем регистре. Для документа <b>HTML/XHTML</b> указывается английский язык (EN).</p></li>
+						
+						<!-- новый абзац -->
+						<li><p><b>URL</b> — адрес документа с <b>DTD</b>.</p></li>
+					</ul>
+					<!-- END Маркированный список -->			
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><b>Справочник HTML</b></td> <!-- подвал сайта -->
+			</tr>
+		</table>
+		<!-- END Таблица -->
+	</body>
+</html>								

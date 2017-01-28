@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> <!-- тип документа и версия -->
+<html>
+	<head>
+		<!-- название нашего окна --> 
+		<title>Тег canvas</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <!-- указание кодировки -->
+		<meta name="description" content="Тег canvas в HTML"> <!-- то, что будут выводить поисковики -->
+		<meta name="Keywords" content="HTML, теги, JavaScript"> <!-- ключевые слова -->
+	</head>
+	<body>
+		<!-- Таблица -->  
+		<table border="2px" width="1024px" align="center" cellpadding="6px"><!-- толщина рамки,ширина таблицы,положение, расстояние между границей и содержимым -->
+			<!-- шапка нашей таблицы --> 
+			<tr>
+				<td colspan="2" align="center"><b>Тег canvas</b></td><!-- объединение ячеек, выравнивание по центру, жирность -->
+			</tr>
+			<!-- END шапка нашей таблицы -->
+			<tr>
+				<td width="250px" valign="top"><!-- ширина ячейки -->
+					<!-- Нумерованный список -->
+					<ol>
+						<li><a href="hystory.html" target="_self">История HTML</a></li>
+						<li><a href="doctype.html" target="_self">DocType</a></li>
+						<li><a href="struct.html" target="_self">Структура HTML-документа</a></li>
+						<li><a href="metatags.html" target="_self">Метатеги</a></li>
+						<li><a href="text.html" target="_self">Текст</a></li>
+						<li><a href="list.html" target="_self">Списки</a></li>
+						<li><a href="bvsstrong.html" target="_self">Отличия тега B от тега Strong</a></li>
+						<li><a href="images.html" target="_self">Рисунки</a></li>
+						<li><a href="table.html" target="_self">Таблицы</a></li>
+						<li><a href="link.html" target="_self">Ссылки</a></li>
+						<li><a href="map.html" target="_self">Map-карта</a></li>
+						<li><a href="divvsspan.html" target="_self">Отличия тега div от тега span</a></li>
+						<li><a href="framevsiframe.html" target="_self">Отличия frame от iframe</a></li>
+						<li><a href="form.html" target="_self">Формы</a></li>
+						<li><a href="paste.html" target="_self">Вставка мультипликации</a></li>
+						<li><a href="reviewhtml5.html" target="_self">Обзор HTML5</a></li>	
+						<li><a href="tagcanvas.html" target="_self">Тег канвас</a></li>
+						<li><a href="universal.html" target="_blank">Универсальные атрибуты*</a></li>
+					</ol>	
+					<!-- END Нумерованный список -->
+				</td>
+				<td> <!-- вторая ячейка второй строки таблицы -->
+					<p> <!-- новый абзац -->
+						Создает область, в которой при помощи JavaScript можно рисовать разные объекты, выводить изображения, трансформировать их и менять свойства. При помощи тега <font color="#0000FF">&lt;canvas&gt;</font> можно создавать рисунки, анимацию, игры и др.
+					</p>
+					<!-- Маркированный список -->
+					<ul> 
+						<li>height - задает высоту холста. По умолчанию 300 пикселов. </li>
+						<li>width - задает ширину холста. По умолчанию 150 пикселов. </li>
+						<li><span title="Ссылка в главном меню">Доступны универсальные атрибуты*</span> </li>
+					</ul>
+					<!-- END Маркированный список -->
+					
+					<!-- Вложенная таблица canvas -->
+					<table align="center" border="2px" width="720px" cellspacing="0px" cellpadding="6px"><!-- положение, толщина рамки, ширина, пространство между ячейками, внутренний отступ текста от границы ячейки -->
+						<tr align="center">
+							<td>Пример кода</td>
+							<td>Результат</td>
+						</tr>
+						<tr>
+							<td>
+								<code><font color="#0000FF">
+									&lt;!DOCTYPE html&gt; <br /><!-- переход на новую строку  -->
+									&lt;html&gt; <br /><!-- переход на новую строку  -->
+									&lt;head&gt; <br /><!-- переход на новую строку  -->
+									&lt;title>canvas&lt;/title&gt; <br /><!-- переход на новую строку  -->
+									&lt;meta charset="utf-8"&gt; <br /><!-- переход на новую строку  -->
+									&lt;script type="text/javascript"&gt;  <br /><!-- переход на новую строку  -->
+									window.onload = function() { <br /><!-- переход на новую строку  -->
+									var drawingCanvas = document.getElementById('smile'); <br /><!-- переход на новую строку  -->
+									if(drawingCanvas && drawingCanvas.getContext) { <br /><!-- переход на новую строку  -->
+									var context = drawingCanvas.getContext('2d'); <br /><!-- переход на новую строку  -->
+									// Рисуем окружность  <br /><!-- переход на новую строку  -->
+									context.strokeStyle = "#000"; <br /><!-- переход на новую строку  -->
+									context.fillStyle = "#fc0"; <br /><!-- переход на новую строку  -->
+									context.beginPath(); <br /><!-- переход на новую строку  -->
+									context.arc(100,100,50,0,Math.PI*2,true); <br /><!-- переход на новую строку  -->
+									context.closePath(); <br /><!-- переход на новую строку  -->
+									context.stroke(); <br /><!-- переход на новую строку  -->
+									context.fill(); <br /><!-- переход на новую строку  -->
+									// Рисуем левый глаз  <br /><!-- переход на новую строку  -->
+									context.fillStyle = "#fff"; <br /><!-- переход на новую строку  -->
+									context.beginPath(); <br /><!-- переход на новую строку  -->
+									context.arc(84,90,8,0,Math.PI*2,true); <br /><!-- переход на новую строку  -->
+									context.closePath(); <br /><!-- переход на новую строку  -->
+									context.stroke(); <br /><!-- переход на новую строку  -->
+									context.fill(); <br /><!-- переход на новую строку  -->
+									// Рисуем правый глаз  <br /><!-- переход на новую строку  -->
+									context.beginPath(); <br /><!-- переход на новую строку  -->
+									context.arc(116,90,8,0,Math.PI*2,true); <br /><!-- переход на новую строку  -->
+									context.closePath(); <br /><!-- переход на новую строку  -->
+									context.stroke(); <br /><!-- переход на новую строку  -->
+									context.fill(); <br /><!-- переход на новую строку  -->
+									// Рисуем рот <br /><!-- переход на новую строку  -->
+									context.beginPath(); <br /><!-- переход на новую строку  -->
+									context.moveTo(70,115); <br /><!-- переход на новую строку  -->
+									context.quadraticCurveTo(100,130,130,115); <br /><!-- переход на новую строку  -->
+									context.quadraticCurveTo(100,150,70,115);  <br /><!-- переход на новую строку  -->
+									context.closePath(); <br /><!-- переход на новую строку  -->
+									context.stroke(); <br /><!-- переход на новую строку  -->
+									context.fill(); <br /><!-- переход на новую строку  -->
+									} <br /><!-- переход на новую строку  -->
+									} <br /><!-- переход на новую строку  -->
+									&lt;/script&gt; <br /><!-- переход на новую строку  -->
+									&lt;/head&gt; <br /><!-- переход на новую строку  -->
+									&lt;body&gt; <br /><!-- переход на новую строку  -->
+									&lt;canvas id="smile" width="200" height="200"&gt; <br /><!-- переход на новую строку  -->
+									&lt;p&gt;Ваш браузер не поддерживает рисование.&lt;/p&gt; <br /><!-- переход на новую строку  -->
+									&lt;/canvas&gt; <br /><!-- переход на новую строку  -->
+									&lt;/body&gt; <br /><!-- переход на новую строку  -->
+									&lt;/html&gt; <br /><!-- переход на новую строку  -->
+								</font></code><!-- выделение,отображение кода  -->
+							</td>
+							<td>
+								<img src="images/canvas.png" width="300px" height="200" alt="Пример" />
+								
+							</td>
+						</tr>
+					</table>
+					<!-- END Вложенная таблица canvas -->
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><b>Справочник HTML</b></td> <!-- подвал сайта -->
+			</tr>
+		</table>
+		<!-- END Таблица -->
+	</body>
+</html>				
