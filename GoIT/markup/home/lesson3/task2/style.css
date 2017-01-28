@@ -1,0 +1,7 @@
+article p:first-of-type{
+ color:green;
+}
+article p:last-of-type{
+ color:red;
+ font-size: 24px;
+}

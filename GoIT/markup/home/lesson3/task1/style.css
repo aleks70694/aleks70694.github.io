@@ -1,0 +1,69 @@
+h1 {
+	text-align: right; /* выравнивание по правому краю */
+}
+
+span {
+	background-color: green; /* зеленый фон */
+	font-style: italic; /* курсив */
+	color: white; /* белый цвет текста */
+}
+
+.orange {
+	color: orange; /* оранжевый цвет текста */
+}
+
+.blue {
+	color: blue; /* синий цвет текста */
+}
+
+p::first-letter { /* для первой буквы всех абзацов задать */
+	color: red; /* красный цвет буквы */
+	font-size: 30px; /* размер шрифта */
+}
+
+ul {
+	font-weight: bold; /* жирный текст */
+}
+
+ul li ol{
+	font-weight: normal; /* вернуть нормальный текст */
+}
+
+ul li ol.gray {
+	color: gray; /* цвет текста серый */
+}
+
+ul li ol.green {
+	color: green; /* цвет текста зеленый */
+}
+
+ul li ol.red {
+	color: red; /* цвет текста красный */
+}
+
+table tr td table,
+table tr td table tr td {
+	border: 1px solid black; /* граница внутренней таблицы */
+}
+
+table tr td table tr {
+	text-align: center; /* выровнять по всё в таблице по центру */
+}
+
+table tr td table {
+	font-weight: bold; /* задать жирный текст в таблице */
+}
+
+table tr td table tr:nth-child(3),
+table tr td table tr:nth-child(4),
+table tr td table tr:nth-child(5) {
+	background-color: green; /* задать зеленый фон */
+	color: white; /* задать белый цвет текста */
+}
+
+table tr td table tr td.left {
+	text-align: left; /* выровнять по левому краю */
+	font-weight: normal; /* вернуть нормальный текст */
+	color: orange; /* задать оранжеый текст */
+	background-color: white; /* вернуть белый фон */
+}

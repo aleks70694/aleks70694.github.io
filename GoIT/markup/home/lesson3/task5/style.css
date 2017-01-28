@@ -1,0 +1,26 @@
+table {
+	border-collapse: collapse;
+	font-size: 20px;
+}
+
+td {
+	border: 1px solid #ddebf7;
+	text-align: center;
+	padding: 5px;
+}
+
+table tr td:nth-child(odd) {
+	background-color: #f2f2de;
+}
+
+table tr td:first-child:not([class="not"]) {
+	background-color: white;
+}
+
+table tr td.not {
+	background-color: #ddebf7;
+}
+
+table tr:nth-child(2n) {
+	background-color: #ddebf7;
+}
