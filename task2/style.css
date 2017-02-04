@@ -1,0 +1,60 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.shell_banner {
+	width: 100%;
+	min-width: 1400px;
+	min-height: 575px;
+	font-family: 'Trebuchet MS', sans-serif;
+	background: url(images/banner.png) no-repeat;
+	background-size: cover;
+	color: #FFF;
+	border: 2px solid orange;
+}
+
+.inner_banner {
+	width: 1024px;
+	margin: 0 auto;
+	min-height: 575px;
+}
+
+.inner_banner > h1 {
+	margin: 135px 0 20px 0;
+	text-align: center;
+	font-size: 57px;
+	text-transform: uppercase;
+}
+
+.inner_banner > h1 span {
+	font-size: 39px;
+	font-weight: 500px;
+	font-family: Garamond;
+	text-transform: none;
+	
+}
+
+.inner_banner p {
+	margin: 0 220px 50px 220px;
+	font-style: italic;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.inner_banner button {
+	font-size: 18px;
+	display: block;
+	width: auto;
+	padding: 20px 50px 20px 50px;
+	background-color: transparent;
+	margin: 0 auto;
+	color: white;
+	text-transform: uppercase;
+}
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
