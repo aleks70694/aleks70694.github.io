@@ -59,7 +59,7 @@ a {
 
 .shell_banner {
 	width: 100%;
-	min-width: 1400px;
+	min-width: 1024px;
 	min-height: 575px;
 	font-family: 'Trebuchet MS', sans-serif;
 	background: url(images/banner.png) no-repeat;
@@ -159,10 +159,10 @@ button:focus {
 
 .shell_people {
 	width: 100%;
-	min-width: 1400px;
+	min-width: 1024px;
 	min-height: 575px;
 	background: url(images/people.png) no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	font-family: 'Trebuchet MS', sans-serif;
 }
 
@@ -480,7 +480,7 @@ button:focus {
 	min-height: 312px;
 	font-family: 'Trebuchet MS', sans-serif;
 	background: url(images/background.png);
-	background-size: 100%;
+	background-size: cover;
 	color: #3170A8;
 }
 
