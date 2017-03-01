@@ -1,0 +1,180 @@
+*
+{
+	margin: 0; /* обнулить внешние отступы */
+	padding: 0; /* обнулить внутренние отступы */
+	text-decoration: none; /* убираем подчеркивание */
+}
+
+.shell {
+	width: 1064px;
+	min-height: 768px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+.header {
+	text-align: center;
+	border: 1px solid black;
+}
+
+#menu {
+	border: 1px solid black;
+	clear: both;
+}
+
+.content {
+	border: 1px solid black;
+	display: inline-block;
+	width: 754px;
+	min-height: 740px;
+	clear: both;
+	vertical-align: top;
+}
+
+.block {
+	margin: 30px 0px 30px 95px;
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	border: 1px solid black;
+}
+
+.image {
+	margin: 10px 0px 0px 19px;
+	width: 80px;
+	height: 80px;
+	border: 1px solid black;
+}
+
+.block:nth-of-type(1) .image {
+	background: url(../images/1.jpg);
+}
+
+.block:nth-of-type(2) .image {
+	background: url(../images/2.jpg);
+}
+
+.block:nth-of-type(3) .image {
+	background: url(../images/3.jpg);
+}
+
+.block:nth-of-type(4) .image {
+	background: url(../images/4.jpg);
+}
+
+.block:nth-of-type(5) .image {
+	background: url(../images/5.jpg);
+}
+
+.block:nth-of-type(6) .image {
+	background: url(../images/6.jpg);
+}
+
+.block:nth-of-type(7) .image {
+	background: url(../images/7.jpg);
+}
+
+.block:nth-of-type(8) .image {
+	background: url(../images/8.jpg);
+}
+
+.block:nth-of-type(9) .image {
+	background: url(../images/9.jpg);
+}
+
+.block:nth-of-type(10) .image {
+	background: url(../images/10.jpg);
+}
+
+.block:nth-of-type(11) .image {
+	background: url(../images/11.jpg);
+}
+
+.block:nth-of-type(12) .image {
+	background: url(../images/12.jpg);
+}
+
+.text {
+	text-align: center;
+}
+
+.article {
+	border: 1px solid black;
+	display: inline-block;
+	-float: right;
+	width: 150px;
+	-height: auto;
+	text-align: center;
+	vertical-align: top;
+}
+
+
+
+.inner {
+	border: 1px solid black;
+	width: 1064px;
+	min-height: 750px;
+	clear: both;
+}
+
+.footer {
+	border: 1px solid black;
+	text-align: center;
+	-clear: both;
+}
+
+/* ----------------------------------------- Блок с меню ------------------------------------------- */
+
+#menu {
+	-margin: 40px; /* наружный отступ */
+	width: 140px;
+	display: inline-block;
+	-float: left;
+	vertical-align: top;
+}
+
+#menu ul {
+	font: 14px Arial; /* размер и тип шрифта */
+	display: inline-block; /* строчно-блочный элемент */
+	-position: relative; /* задаем относительное позиционирование */
+}
+
+#menu li {
+	list-style: none; /* убираем маркеры */
+	width: 140px; /* ширина блока */
+	text-align: center; /* текст по центру */
+	-position: relative;
+}
+
+#menu li a {
+	display: block; /* делаем элемент блочным */
+	color: #FFF; /* цвет текста - белый */
+	background: #575757; /* цвет фона темно-серый, но темнее, чем границы снизу и справа */
+	padding: 10px; /* внутренний отступ */
+	border-bottom: 2px solid #626262; /* нижняя граница темно-серого цвета*/
+	border-right: 2px solid #626262; /* правая граница темно-серого цвета*/
+}
+
+#menu li a:hover { /* при наведении на a */
+	color: #575757; /* цвет текста темно-серый, но темнее, чем границы снизу и справа */
+	background: #C0C0C0; /* цвет заливки светло-серый */
+}
+
+#menu ul ul { 
+	display: none; /* не показывать */
+	-position: absolute; /* абсолютное позиционирование */
+}
+
+#menu ul ul li {
+	-position: relative; /* относительное позиционирование */
+}
+
+#menu ul ul ul {
+	-position: absolute; /* абсолютное позиционирование */
+}
+
+#menu ul li:hover > ul { /* при наведении курсора мыши отобразить ребенка */
+	display: block;
+}
+
+/* ----------------------------------------- Блок с меню ------------------------------------------- */
