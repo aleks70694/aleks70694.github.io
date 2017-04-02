@@ -1,90 +1,54 @@
-* {
-	padding: 0px;
-	margin: 0px;
+*
+{
+	margin: 0; /* обнулить внешние отступы */
+	padding: 0; /* обнулить внутренние отступы */
 }
 
-.shell > h1,
-.shell > h4 {
-	text-align: center;
-	font-family: 'Lato', sans-serif;
-	margin: 30px;
+.parent {
+	margin: 20px;
 }
 
-.shell_inner {
-	min-width: 370px;
-	max-width: 1200px;
-	margin: 80px auto;
+.outer_circle {
+	width: 200px;
+	height: 200px;
+	background: url(images/color1.png);
+    text-align: center;
+	border-radius: 100px;
 }
 
-.image {
+.outer_circle:active {
+	background: #6e6e6e;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* задать тень по краям блока */
+}
+
+.inner_circle {
 	display: inline-block;
-	width: 360px;
-	height: 260px;
-	vertical-align: top;
-	margin-left: 30px;
-	margin-bottom: 30px;
-	-border: 1px solid black;
+	margin-top: 40px;
+	width: 120px;
+	height: 120px;
+	background: url(images/color2.png);
+	border-radius: 60px;
 }
 
-.image:nth-of-type(1) {
-	background: url(images/1.png);
+.inner_circle:active {
+	background: #bb5f7a;
 }
 
-.image:nth-of-type(2) {
-	background: url(images/2.png);
+.inner_inner_circle {
+	 display: inline-block;
+	width: 60px;
+	height: 60px;
+	margin-top: 30px;
+	background: url(images/color3.png);
+	border-radius: 30px;
 }
 
-.image:nth-of-type(3) {
-	background: url(images/3.png);
+.inner_inner_circle:active {
+	background: #2aa771;
 }
 
-.image:nth-of-type(4) {
-	background: url(images/4.png);
-}
-
-.image:nth-of-type(5) {
-	background: url(images/5.png);
-}
-
-.image:nth-of-type(6) {
-	background: url(images/6.png);
-}
-
-.substrate {
-	width: 100%;
-	height: 100%;
-	display: table;
-}
-
-.block {
-	width: 90px;
-	text-align: center;
-	display: none;
-	vertical-align: middle;
-
-}
-
-.buttons {
-	display: inline-block;
-	vertical-align: top;
-	width: 40px;
-	height: 40px;
-	border: 1px solid #FFF;
-	cursor: pointer;
-}
-
-.zoom {
-	background: url(images/zoom.png) 50% 50% no-repeat;
-}
-
-.link {
-	background: url(images/link.png) 50% 50% no-repeat;
-}
-
-.substrate:hover {
-	background-color: rgba(0, 120, 201, 0.7); /* Цвет фона и значение прозрачности */
-}
-
-.substrate:hover > .block {
-	display: table-cell;
+.outer_circle,
+.inner_circle,
+.inner_inner_circle {
+	-border: 1px solid #000;
 }
