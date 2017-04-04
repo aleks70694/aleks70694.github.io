@@ -14,11 +14,12 @@
 	background: url(images/color1.png);
     text-align: center;
 	border-radius: 100px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* задать тень по краям блока */
 }
 
 .outer_circle:active {
 	background: #6e6e6e;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* задать тень по краям блока */
+	box-shadow: inset 1px 1px 10px -1px;
 }
 
 .inner_circle {
@@ -28,10 +29,12 @@
 	height: 120px;
 	background: url(images/color2.png);
 	border-radius: 60px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* задать тень по краям блока */
 }
 
 .inner_circle:active {
 	background: #bb5f7a;
+	box-shadow: inset 1px 1px 10px -1px;
 }
 
 .inner_inner_circle {
@@ -41,10 +44,12 @@
 	margin-top: 30px;
 	background: url(images/color3.png);
 	border-radius: 30px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* задать тень по краям блока */
 }
 
 .inner_inner_circle:active {
-	background: #2aa771;
+	background: #85c846;
+	box-shadow: inset 1px 1px 10px -1px;
 }
 
 .outer_circle,
